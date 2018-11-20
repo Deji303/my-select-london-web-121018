@@ -3,8 +3,9 @@ def my_select(collection)
   i = 0; 
   newA = []; 
   until i >= collection.length 
-    if (yield collection[i] == true)
-      newA.push(yield collection[i])
+    is_it_true = yield collection[i] 
+    if is_it_true == true 
+      newA.push(is_it_true)
     end 
     i += 1 
   end 
